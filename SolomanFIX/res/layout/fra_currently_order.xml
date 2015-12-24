@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <RadioGroup
+            android:id="@+id/rg_toptablehost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_centerInParent="true"
+            android:baselineAligned="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_gchat"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/currently_order"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingRight="@dimen/DIMEN_40PX"
+                android:text="当前订单"
+                android:textColor="@color/software_textcolor"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_discuss"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/currently_order2"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingRight="@dimen/DIMEN_40PX"
+                android:text="历史订单"
+                android:textColor="@color/software_textcolor"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e7" />
+
+    <com.jfeinstein.jazzyviewpager.JazzyViewPager
+        android:id="@+id/download_jazzyvp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_e7" />
+
+</LinearLayout>

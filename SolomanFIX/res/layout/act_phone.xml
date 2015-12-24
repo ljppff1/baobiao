@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phone_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/DIMEN_31PX"
+        android:layout_marginRight="@dimen/DIMEN_31PX" >
+
+        <TextView
+            android:id="@+id/city_tv__"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_150PX"
+            android:background="@drawable/act_citys"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/DIMEN_21PX"
+            android:paddingTop="@dimen/DIMEN_21PX"
+            android:text="asdasd"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_tv__"
+            android:layout_marginTop="@dimen/DIMEN_46PX"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                 android:id="@+id/phone_ll_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/act_city_left"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_45PX"
+                    android:layout_height="@dimen/DIMEN_45PX"
+                    android:layout_marginRight="@dimen/DIMEN_41PX"
+                    android:src="@drawable/icon_answer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/DIMEN_21PX"
+                    android:paddingTop="@dimen/DIMEN_21PX"
+                    android:text="拨号"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                 android:id="@+id/phone_ll_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/act_caty_right"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_45PX"
+                    android:layout_height="@dimen/DIMEN_45PX"
+                    android:layout_marginRight="@dimen/DIMEN_41PX"
+                    android:src="@drawable/icon_hang_up" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/DIMEN_21PX"
+                    android:paddingTop="@dimen/DIMEN_21PX"
+                    android:text="取消"
+                    android:textColor="@color/color_a"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

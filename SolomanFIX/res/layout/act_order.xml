@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000" >
+
+    <RelativeLayout
+        android:id="@+id/item_present_indent_details_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:background="@drawable/item_present_indent_details_top" >
+
+        <ImageView
+            android:id="@+id/item_present_indent_details_tv_cancel"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_marginRight="@dimen/DIMEN_9PX"
+            android:layout_marginTop="@dimen/DIMEN_9PX"
+            android:src="@drawable/icon_quxiao" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_cancel"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="姓名:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_names"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_names"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_phones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_name"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="电话:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_phones"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_phones"
+            android:text="13005480920"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_addresss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_phone"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="地址:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_addresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_addresss"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_addresss"
+            android:text="啊啊 啊啊啊啊啊啊啊啊啊啊啊啊啊 啊啊啊啊啊啊啊啊"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_start_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_addresse"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="开始时间:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_start_dates"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_start_dates"
+            android:text="aa"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_end_dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_start_date"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="结束时间:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_end_dates"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_end_dates"
+            android:text="aa"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_durations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_end_date"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="时长:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_durations"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_durations"
+            android:text="aa"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_duration"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="人数:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_numbers"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_numbers"
+            android:text="29特卫"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_levels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_number"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="级别:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_levels"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_levels"
+            android:text="家人陪护"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_says"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_level"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="捎一句:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_say"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_says"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_says"
+            android:text="呵呵呵"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_present_indent_details_tv_say"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="价格:  "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_present_indent_details_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_present_indent_details_tv_prices"
+            android:layout_marginBottom="@dimen/DIMEN_25PX"
+            android:layout_toRightOf="@+id/item_present_indent_details_tv_prices"
+            android:text="271.51万元"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_present_indent_details_tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_present_indent_details_top"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:background="@drawable/item_present_indent_details_cancel"
+        android:gravity="center"
+        android:paddingBottom="@dimen/DIMEN_25PX"
+        android:paddingTop="@dimen/DIMEN_25PX"
+        android:text="去支付"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/animationHoldingFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_e7"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/mapPictures"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:src="@drawable/zhuan" />
+    </RelativeLayout>
+
+</RelativeLayout>

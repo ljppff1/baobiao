@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fra_individual_date_rl_bj"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_452PX"
+        android:background="@drawable/bj3" >
+
+        <RelativeLayout
+            android:id="@+id/fra_rl_individual_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_96PX" >
+
+            <ImageView
+                android:id="@+id/act_tv_view"
+                android:layout_width="@dimen/DIMEN_39PX"
+                android:layout_height="@dimen/DIMEN_39PX"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_35PX"
+                android:adjustViewBounds="true"
+                android:src="@drawable/chouti" />
+
+            <ImageView
+                android:id="@+id/act_iv_views1"
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DIMEN_45PX"
+                android:adjustViewBounds="true"
+                android:src="@drawable/huizhang1" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/act_iv_views2"
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/act_iv_views1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/huizhang1" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/act_iv_views3"
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/act_iv_views2"
+                android:adjustViewBounds="true"
+                android:src="@drawable/huizhang1" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/act_iv_views4"
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/act_iv_views3"
+                android:adjustViewBounds="true"
+                android:src="@drawable/huizhang1" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/act_iv_views5"
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/act_iv_views4"
+                android:adjustViewBounds="true"
+                android:src="@drawable/huizhang1" >
+            </ImageView>
+        </RelativeLayout>
+
+        <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色  http://www.open-open.com/lib/view/open1418871189839.html -->
+        <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果 -->
+
+        <com.soloman.org.cn.view.RoundImageView
+            android:id="@+id/fra_individual_date_rlv_"
+            android:layout_width="@dimen/DIMEN_180PX"
+            android:layout_height="@dimen/DIMEN_180PX"
+            android:layout_below="@+id/fra_rl_individual_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/DIMEN_6PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/top" />
+
+        <TextView
+            android:id="@+id/act_tv_individual_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fra_individual_date_rlv_"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:text="刘德华"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/act_tv_individual_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_tv_individual_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:text="138****8888"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fra_individual_date_ll_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:background="@color/ef"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_260PX"
+            android:background="@color/color_a"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:id="@+id/fra_individual_date_ll_message"
+                        android:layout_width="@dimen/DIMEN_200PX"
+                        android:layout_height="@dimen/DIMEN_200PX"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/fra_individual_date_iv_message"
+                            android:layout_width="@dimen/DIMEN_50PX"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/xiaoxi3" />
+
+                        <ImageView
+                            android:id="@+id/fra_individual_date_iv_messages"
+                            android:layout_width="@dimen/DIMEN_64PX"
+                            android:layout_height="@dimen/DIMEN_4PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/xian3" />
+
+                        <TextView
+                            android:id="@+id/fra_individual_date_tv_messages"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_10PX"
+                            android:text="消息"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <!-- <RelativeLayout -->
+                    <!-- android:id="@+id/fra_individual_date_ll_message" -->
+                    <!-- android:layout_width="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_height="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_centerInParent="true" -->
+                    <!-- android:background="@drawable/fra_individual_date_message" -->
+                    <!-- android:clickable="true" > -->
+                    <!-- </RelativeLayout> -->
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:id="@+id/fra_individual_date_ll_address"
+                        android:layout_width="@dimen/DIMEN_200PX"
+                        android:layout_height="@dimen/DIMEN_200PX"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_50PX"
+                            android:layout_height="@dimen/DIMEN_50PX"
+                            android:layout_marginBottom="@dimen/DIMEN_10PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/dizhi2" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_64PX"
+                            android:layout_height="@dimen/DIMEN_4PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/xian3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_10PX"
+                            android:text="地址"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <!-- <RelativeLayout -->
+                    <!-- android:id="@+id/fra_individual_date_iv_address" -->
+                    <!-- android:layout_width="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_height="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_centerInParent="true" -->
+                    <!-- android:background="@drawable/fra_individual_date_message" -->
+                    <!-- android:clickable="true" > -->
+                    <!-- </RelativeLayout> -->
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:id="@+id/fra_individual_date_ll_discount"
+                        android:layout_width="@dimen/DIMEN_200PX"
+                        android:layout_height="@dimen/DIMEN_200PX"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/fra_individual_date_iv_discount"
+                            android:layout_width="@dimen/DIMEN_50PX"
+                            android:layout_height="@dimen/DIMEN_60PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/youhuijun3" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_64PX"
+                            android:layout_height="@dimen/DIMEN_4PX"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/xian3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/DIMEN_10PX"
+                            android:text="优惠券"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <!-- <RelativeLayout -->
+                    <!-- android:id="@+id/fra_individual_date_ll_discount" -->
+                    <!-- android:layout_width="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_height="@dimen/DIMEN_200PX" -->
+                    <!-- android:layout_centerInParent="true" -->
+                    <!-- android:background="@drawable/fra_individual_date_message" -->
+                    <!-- android:clickable="true" > -->
+                    <!-- </RelativeLayout> -->
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_15PX"
+            android:background="@color/color_a"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/fra_individual_date_ll_z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/DIMEN_25PX"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingTop="@dimen/DIMEN_25PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请码"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_30PX"
+                    android:layout_height="@dimen/DIMEN_30PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/DIMEN_25PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/s" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:background="@color/color_e7" />
+
+            <RelativeLayout
+                android:id="@+id/fra_individual_date_ll_zz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/DIMEN_25PX"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingTop="@dimen/DIMEN_25PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人资料"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_30PX"
+                    android:layout_height="@dimen/DIMEN_30PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/DIMEN_25PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/s" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:background="@color/color_e7" />
+
+            <RelativeLayout
+                android:id="@+id/fra_individual_date_ll_zzz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/DIMEN_25PX"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingTop="@dimen/DIMEN_25PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_30PX"
+                    android:layout_height="@dimen/DIMEN_30PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/DIMEN_25PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/s" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:background="@color/color_e7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

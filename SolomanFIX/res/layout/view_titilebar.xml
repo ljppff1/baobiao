@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_96PX"
+    android:background="@color/color_a" >
+
+    <TextView
+        android:id="@+id/act_tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_34PX"
+        android:text="北京"
+        android:textColor="@color/tab_gray"
+        android:textSize="18sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/act_iv_view"
+        android:layout_width="@dimen/DIMEN_36PX"
+        android:layout_height="@dimen/DIMEN_36PX"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_16PX"
+        android:layout_toRightOf="@+id/act_tv_address"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_shousuo" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/index_ll_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/DIMEN_14PX"
+                android:text="嚯嚯"
+                android:textColor="@color/tab_gray"
+                android:textSize="23sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginTop="@dimen/DIMEN_14PX"
+                android:text="Soloman"
+                android:textColor="@color/tab_gray"
+                android:textSize="23sp" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/act_Iv_views"
+        android:layout_width="@dimen/DIMEN_40PX"
+        android:layout_height="@dimen/DIMEN_40PX"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_phone" >
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/indexs22" >
+
+        <ImageView
+            android:id="@+id/fra_iv_viewss"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_35PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fanhui3" />
+
+        <TextView
+            android:id="@+id/fra_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fra_tv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:text="下一步"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/DIMEN_50PX"
+        android:layout_marginRight="@dimen/DIMEN_50PX"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_49PX"
+            android:text="服务类型"
+            android:textColor="@color/e0"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/act_ll_appoint_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_15PX"
+            android:background="@drawable/apply"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingTop="@dimen/DIMEN_30PX" >
+
+            <TextView
+                android:id="@+id/act_tv_appoint_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:text="点击选择服务类型"
+                android:textColor="@color/c7"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_49PX"
+            android:text="服务时长"
+            android:textColor="@color/e0"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/act_ll_appoint_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_15PX"
+            android:background="@drawable/apply"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingTop="@dimen/DIMEN_30PX" >
+
+            <TextView
+                android:id="@+id/act_tv_appoint_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:text="点击选择服务时长"
+                android:textColor="@color/c7"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_49PX"
+            android:text="开始时间"
+            android:textColor="@color/e0"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/act_ll_appoint_date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_15PX"
+            android:background="@drawable/apply"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingTop="@dimen/DIMEN_30PX" >
+
+            <TextView
+                android:id="@+id/act_tv_appoint_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:text="点击选择开始时间"
+                android:textColor="@color/c7"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <com.soloman.org.cn.view.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.soloman.org.cn.view.percent.PercentRelativeLayout
+                android:id="@+id/act_rl_appoint_number"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_53PX"
+                app:layout_heightPercent="32.1%h"
+                app:layout_widthPercent="32.1%h"
+                android:background="@drawable/act_appoint" >
+
+                <com.soloman.org.cn.view.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/act_iv_appoint_special"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"
+                        app:layout_heightPercent="28%h"
+                        app:layout_widthPercent="28%h"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/tewei3" />
+
+                    <TextView
+                       android:id="@+id/act_tv_appoint_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/act_iv_appoint_special"
+                        app:layout_marginTopPercent="3%"
+                        app:layout_textSizePercent="20%"
+                        android:text="1个特卫"
+                        android:textColor="@color/e1" />
+                </com.soloman.org.cn.view.percent.PercentRelativeLayout>
+            </com.soloman.org.cn.view.percent.PercentRelativeLayout>
+
+            <com.soloman.org.cn.view.percent.PercentRelativeLayout
+                android:id="@+id/act_rl_appoint_level"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DIMEN_53PX"
+                app:layout_heightPercent="32.1%h"
+                app:layout_widthPercent="32.1%h"
+                android:background="@drawable/act_appoint" >
+
+                <com.soloman.org.cn.view.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/act_iv_appoint_level"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"
+                        app:layout_heightPercent="28%h"
+                        app:layout_widthPercent="28%h"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/xunzhang3" />
+
+                    <TextView
+                        android:id="@+id/act_tv_appoint_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/act_iv_appoint_level"
+                        app:layout_marginTopPercent="3%"
+                        app:layout_textSizePercent="20%"
+                        android:text="一级勋章"
+                        android:textColor="@color/e1" />
+                </com.soloman.org.cn.view.percent.PercentRelativeLayout>
+            </com.soloman.org.cn.view.percent.PercentRelativeLayout>
+        </com.soloman.org.cn.view.percent.PercentRelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

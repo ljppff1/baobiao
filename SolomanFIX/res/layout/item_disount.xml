@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/youhuiquan1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:paddingRight="@dimen/DIMEN_50PX" >
+
+        <TextView
+            android:id="@+id/item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="soloman100元代金券x1张"
+            android:textColor="@color/color_a"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tv"
+            android:gravity="right"
+            android:text="soloman100元代金券x1张"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

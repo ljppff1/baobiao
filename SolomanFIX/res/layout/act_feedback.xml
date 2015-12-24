@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <ImageView
+            android:id="@+id/act_tv_common_address_return"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_34PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/web_view" />
+
+        <TextView
+            android:id="@+id/act_tv_common_address_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e7" />
+
+    <RelativeLayout
+        android:id="@+id/act_rl_z"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_180PX"
+        android:layout_margin="@dimen/DIMEN_16PX"
+        android:background="@drawable/act_feedback" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:background="@null" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_rl_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:background="@drawable/item_present_indent_click"
+        android:paddingBottom="@dimen/DIMEN_10PX"
+        android:paddingTop="@dimen/DIMEN_10PX" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

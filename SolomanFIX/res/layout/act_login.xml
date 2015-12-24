@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/denglu" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_500PX"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/DIMEN_23PX"
+        android:layout_marginRight="@dimen/DIMEN_23PX"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_89PX" >
+
+            <RelativeLayout
+                android:id="@+id/login_rl_"
+                android:layout_width="@dimen/DIMEN_130PX"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/login_radius2"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/login_tv_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="获取"
+                    android:textColor="@color/color_a"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/login_tv_gets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login_tv_get"
+                    android:layout_centerHorizontal="true"
+                    android:text="验证码"
+                    android:textColor="@color/color_a"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/login_rl_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/login_rl_"
+                android:background="@drawable/login_radius" >
+
+                <EditText
+                    android:id="@+id/login_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="手机号码"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/DIMEN_121PX"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/login_click1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/DIMEN_10PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/delete_gray"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_vw"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/login_rl_"
+            android:background="@color/color_e7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_89PX"
+            android:background="@drawable/login_radius4" >
+
+            <EditText
+                android:id="@+id/login_et_verification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="验证码"
+                android:inputType="numberPassword"
+                android:paddingLeft="@dimen/DIMEN_121PX"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/login_click2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DIMEN_140PX"
+                android:adjustViewBounds="true"
+                android:src="@drawable/delete_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logon_rl_click"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_89PX"
+            android:layout_marginTop="@dimen/DIMEN_32PX"
+            android:background="@drawable/login_radius3" >
+
+            <ImageView
+                android:id="@+id/login_et_clic"
+                android:layout_width="@dimen/DIMEN_50PX"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_enter" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

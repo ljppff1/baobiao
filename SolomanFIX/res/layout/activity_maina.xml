@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/view_titilebar" />
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/head"
+        android:background="@color/color_e7" />
+
+    <LinearLayout
+        android:id="@+id/index_fra_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_vw"
+        android:layout_marginTop="@dimen/DIMEN_55PX"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_50PX"
+        android:paddingRight="@dimen/DIMEN_50PX" >
+
+        <ImageView
+            android:id="@+id/fra_iv_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/index0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/index_fra_s"
+        android:layout_marginTop="@dimen/DIMEN_54PX"
+        android:orientation="horizontal" >
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_provinces"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_provincess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/DIMEN_74PX" >
+
+        <View
+            android:layout_width="@dimen/DIMEN_305PX"
+            android:layout_height="@dimen/DIMEN_305PX"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/index_radius1" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_270PX"
+            android:layout_height="@dimen/DIMEN_270PX"
+            android:layout_centerInParent="true"
+            android:background="@drawable/index_redius2" />
+
+        <View
+            android:id="@+id/index_vw_about"
+            android:layout_width="@dimen/DIMEN_305PX"
+            android:layout_height="@dimen/DIMEN_305PX"
+            android:layout_centerInParent="true"
+            android:background="@drawable/main_s" />
+
+        <TextView
+            android:id="@+id/index_tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约"
+            android:textColor="@color/color_a"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

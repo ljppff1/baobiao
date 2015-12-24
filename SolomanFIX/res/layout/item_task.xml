@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <TextView
+            android:id="@+id/item_tv_task_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="订单 123123123123123"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+
+        <TextView
+            android:id="@+id/item_tv_task_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务类型 : 旅游陪同(需要二个三级特卫)"
+            android:textColor="@color/aq"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_tv_task_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务时长 : 7个月"
+            android:textColor="@color/aq"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="订单金额 : "
+                android:textColor="@color/aq"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_tv_task_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="￥1280.00"
+                android:textColor="@color/hong"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_15PX" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/qi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="起"
+                    android:textColor="@color/color_a"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_tv_task_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015年2月1日 13.00"
+                android:textColor="@color/aq"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_marginLeft="@dimen/DIMEN_16PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dian3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_15PX" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/zhi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="止"
+                    android:textColor="@color/color_a"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_tv_task_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015年9月1日 13.00"
+                android:textColor="@color/aq"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/DIMEN_30PX"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_20PX"
+        android:paddingTop="@dimen/DIMEN_30PX" >
+
+        <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色  http://www.open-open.com/lib/view/open1418871189839.html -->
+        <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果 -->
+
+        <com.soloman.org.cn.view.RoundImageView
+            android:id="@+id/fra_individual_date_rlv_"
+            android:layout_width="@dimen/DIMEN_90PX"
+            android:layout_height="@dimen/DIMEN_90PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/yuan3" />
+
+        <TextView
+            android:id="@+id/item_tv_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fra_individual_date_rlv_"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:text="客户:刘德华"
+            android:textColor="@color/aq"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/item_rl_task_click"
+            android:layout_width="@dimen/DIMEN_200PX"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:background="@drawable/fra_task" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/DIMEN_20PX"
+                android:text="接任务"
+                android:textColor="@color/color_a"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_20PX" 
+        android:background="@color/ef"/>
+
+</LinearLayout>

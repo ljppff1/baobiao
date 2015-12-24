@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/act_webview_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <ImageView
+            android:id="@+id/act_webview_iv"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_34PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/web_view" />
+
+        <TextView
+            android:id="@+id/act_webview_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="服务范围"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/act_webview_rl"
+        android:background="@color/color_e7" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_vw" />
+
+</RelativeLayout>

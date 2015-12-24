@@ -1,0 +1,122 @@
+-optimizationpasses 5
+-dontskipnonpubliclibraryclasses 
+-dontskipnonpubliclibraryclassmembers
+-dontusemixedcaseclassnames 
+-dontpreverify  
+-verbose
+-dontwarn
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes *Annotation*  
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.View
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.app.Fragment   
+-keep public class * extends android.support.v4.**  
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep class android.net.http.SslError
+-keep class android.webkit.**{*;}
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-keep class m.framework.**{*;}
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+-keep class **.R$* {   
+*;   
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+#添加第三方包
+#支付宝
+-libraryjars libs/alipaysdk.jar
+-libraryjars libs/alipaysecsdk.jar
+-libraryjars libs/alipayutdid.jar
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.app.AuthTask{ public *;}
+-keep class com.alipay.mobilesecuritysdk.*
+-keep class com.ut.*
+
+#极光推送
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+
+#微信支付
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+
+
+-dontwarn com.mrwujay.cascade.**
+-keep class com.mrwujay.cascade.**{*;}
+
+-dontwarn kankan.wheel.widget.**
+-keep class kankan.wheel.widget.**{*;}
+
+-dontwarn com.jfeinstein.jazzyviewpager.**
+-keep class com.jfeinstein.jazzyviewpager.**{*;}
+
+#开发框架
+-dontwarn com.duowan.mobile.netroid.**
+-keep class com.duowan.mobile.netroid.**{*;}
+-libraryjars libs/netroid-1.2.1.jar
+
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; } 
+
+-keep public class com.smile.android.R$*{
+	public static final int *;
+}
+
+
+
+-assumenosideeffects
+class android.util.Log
+ {
+    public static ***
+ e(...);
+    public static ***
+ w(...);
+    public static ***
+ wtf(...);
+    public static ***
+ d(...);
+    public static ***
+ v(...);
+}
+

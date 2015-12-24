@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- <com.amap.api.maps.MapView -->
+    <!-- android:id="@+id/map" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="-260dp" -->
+    <!-- android:layout_marginRight="-260dp" > -->
+    <!-- </com.amap.api.maps.MapView> -->
+    <!-- -80dp 是为了避免出现黑边 -->
+
+    <ImageView
+        android:id="@+id/fra_map_tvs"
+        android:layout_width="@dimen/DIMEN_80PX"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DIMEN_400PX"
+        android:src="@drawable/baobiao3" />
+
+    <ImageView
+        android:id="@+id/fra_map_ib"
+        android:layout_width="@dimen/DIMEN_80PX"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dinwei3" />
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/left_bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_rl_individual"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_317PX"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_39PX" >
+
+        <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色  http://www.open-open.com/lib/view/open1418871189839.html -->
+        <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果 -->
+
+        <com.soloman.org.cn.view.RoundImageView
+            android:id="@+id/fra_individual_date_rlvs_"
+            android:layout_width="@dimen/DIMEN_140PX"
+            android:layout_height="@dimen/DIMEN_140PX"
+            android:layout_marginRight="@dimen/DIMEN_58PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/top" />
+
+        <TextView
+            android:id="@+id/view_tv_sliding_left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_24PX"
+            android:layout_toRightOf="@+id/fra_individual_date_rlvs_"
+            android:text="刘德华"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/view_tv_sliding_left_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fra_individual_date_rlvs_"
+            android:layout_marginBottom="@dimen/DIMEN_24PX"
+            android:layout_toRightOf="@+id/fra_individual_date_rlvs_"
+            android:text="12345678901"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 首页 -->
+
+    <LinearLayout
+        android:id="@+id/menu_livehall_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_livehall_icon"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/shouye" />
+
+        <TextView
+            android:id="@+id/menu_livehall_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="首页"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 任务 -->
+
+    <LinearLayout
+        android:id="@+id/menu_follow_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_follow_icon"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/renwu" />
+
+        <TextView
+            android:id="@+id/menu_follow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="任务"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 已接任务 -->
+
+    <LinearLayout
+        android:id="@+id/menu_rank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/yijierenwu" />
+
+        <TextView
+            android:id="@+id/menu_rank_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="已接任务"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 订单 -->
+
+    <LinearLayout
+        android:id="@+id/menu_rank_layout_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon_order"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/order" />
+
+        <TextView
+            android:id="@+id/menu_rank_text_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="订单"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:layout_marginLeft="@dimen/DIMEN_70PX"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:adjustViewBounds="true"
+        android:src="@drawable/x" />
+
+    <LinearLayout
+        android:id="@+id/menu_rank_layout_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon_news"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/xiaoxi" />
+
+        <TextView
+            android:id="@+id/menu_rank_text_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="消息"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_rank_layout_youhui"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon_youhui"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/youhui" />
+
+        <TextView
+            android:id="@+id/menu_rank_text_youhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="优惠券"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:layout_marginLeft="@dimen/DIMEN_70PX"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:adjustViewBounds="true"
+        android:src="@drawable/x" />
+ <LinearLayout
+        android:id="@+id/menu_rank_layout_fenxiang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon_fenxiang"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fenxiang" />
+
+        <TextView
+            android:id="@+id/menu_rank_text_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="分享"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_rank_layout_gengduo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/menu_rank_icon_gengduo"
+            android:layout_width="@dimen/DIMEN_50PX"
+            android:layout_height="@dimen/DIMEN_50PX"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gengduo" />
+
+        <TextView
+            android:id="@+id/menu_rank_text_gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:text="更多"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

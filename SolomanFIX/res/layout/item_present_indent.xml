@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:background="@color/color_e7" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_5PX"
+        android:layout_marginLeft="@dimen/DIMEN_15PX"
+        android:layout_marginRight="@dimen/DIMEN_15PX"
+        android:layout_marginTop="@dimen/DIMEN_8PX"
+        android:background="@drawable/item_present_indent_ssss" >
+
+        <RelativeLayout
+            android:id="@+id/rl_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/DIMEN_15PX" >
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_indent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:text="订单号:"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_toRightOf="@+id/item_present_indent_tv_indent"
+                android:text="146"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="已拒绝"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/item_present_indent_tv_false"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/item_present_indent_tv_state"
+                android:layout_marginLeft="@dimen/DIMEN_8PX"
+                android:layout_marginRight="@dimen/DIMEN_8PX"
+                android:background="@drawable/item_present_indent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_s"
+            android:paddingTop="@dimen/DIMEN_15PX" >
+
+            <TextView
+                android:id="@+id/item_city_tv_start_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_6PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:background="@drawable/item_present_indentss"
+                android:paddingBottom="@dimen/DIMEN_2PX"
+                android:paddingLeft="@dimen/DIMEN_5PX"
+                android:paddingRight="@dimen/DIMEN_5PX"
+                android:paddingTop="@dimen/DIMEN_2PX"
+                android:text="起"
+                android:textColor="@color/color_a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_city_tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/item_city_tv_start_dates"
+                android:layout_toRightOf="@+id/item_city_tv_start_dates"
+                android:text="146"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="服务时长"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_city_tv_end_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_city_tv_start_dates"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:background="@drawable/item_present_indents"
+                android:paddingBottom="@dimen/DIMEN_2PX"
+                android:paddingLeft="@dimen/DIMEN_5PX"
+                android:paddingRight="@dimen/DIMEN_5PX"
+                android:paddingTop="@dimen/DIMEN_2PX"
+                android:text="末"
+                android:textColor="@color/color_a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_city_tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/item_city_tv_end_dates"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_toRightOf="@+id/item_city_tv_end_dates"
+                android:text="1461"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_city_tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_city_tv_end_dates"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/item_present_indent_tv_falses"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/item_city_tv_end_dates"
+                android:layout_marginLeft="@dimen/DIMEN_8PX"
+                android:layout_marginRight="@dimen/DIMEN_8PX"
+                android:background="@drawable/item_present_indent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_ss"
+            android:paddingTop="@dimen/DIMEN_15PX" >
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_levels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_6PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:text="服务类型"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_present_indent_tv_levels"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="接送"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_people_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_present_indent_tv_levels"
+                android:layout_marginBottom="@dimen/DIMEN_6PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:text="保镖人数"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_people_countss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_present_indent_tv_people_counts"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_addresss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_present_indent_tv_people_counts"
+                android:layout_marginBottom="@dimen/DIMEN_15PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:text="服务地点"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_present_indent_tv_addresss"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:ellipsize="start"
+                android:maxEms="14"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/item_present_indent_tv_falsess"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/item_present_indent_tv_addresss"
+                android:layout_marginLeft="@dimen/DIMEN_8PX"
+                android:layout_marginRight="@dimen/DIMEN_8PX"
+                android:background="@drawable/item_present_indent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ssss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sss"
+            android:paddingTop="@dimen/DIMEN_15PX" >
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_moneys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_6PX"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:text="订单总价"
+                android:textColor="@color/ff6900"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_present_indent_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/item_present_indent_tv_Moneys"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="400元"
+                android:textColor="@color/ff6900"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/item_present_indent_tv_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_present_indent_tv_moneys"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:background="@drawable/item_present_indent_click"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/DIMEN_6PX"
+                android:paddingTop="@dimen/DIMEN_6PX"
+                android:text="查看详情 "
+                android:textColor="@color/color_a"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_15PX"
+                android:layout_below="@+id/item_present_indent_tv_click" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

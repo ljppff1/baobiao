@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ef" >
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/indexs22" >
+
+        <ImageView
+            android:id="@+id/act_iv_viewss"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_35PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/chouti" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/index_ll_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/DIMEN_14PX"
+                    android:text="嚯嚯"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="23sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/DIMEN_15PX"
+                    android:layout_marginTop="@dimen/DIMEN_14PX"
+                    android:text="Soloman"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="23sp" >
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/act_rl_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX" >
+
+            <TextView
+                android:id="@+id/act_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/DIMEN_15PX"
+                android:text="北京"
+                android:textColor="@color/color_a"
+                android:textSize="18sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/act_iv_view"
+                android:layout_width="@dimen/DIMEN_36PX"
+                android:layout_height="@dimen/DIMEN_36PX"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/act_tv_address"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_shousuo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_108PX"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+    <com.jfeinstein.jazzyviewpager.JazzyViewPager
+        android:id="@+id/download_jazzyvp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fra_indexs_bottom"
+        android:layout_below="@+id/fra_indexs_top"
+        android:background="@color/color_e7" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_139PX"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/index_bottom" >
+
+        <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色  http://www.open-open.com/lib/view/open1418871189839.html -->
+        <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果 -->
+
+        <RelativeLayout
+            android:id="@+id/fra_individual_date_rlvs_"
+            android:layout_width="@dimen/DIMEN_120PX"
+            android:layout_height="@dimen/DIMEN_120PX"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/DIMEN_11PX" >
+
+            <com.soloman.org.cn.view.RoundImageView
+                android:id="@+id/fra_image_indexs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/hong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="预约"
+                android:textColor="@color/color_a"
+                android:textSize="22sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fra_ll_index_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_65PX"
+            android:layout_marginTop="@dimen/DIMEN_47PX"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_44PX"
+                android:layout_height="@dimen/DIMEN_44PX"
+                android:adjustViewBounds="true"
+                android:src="@drawable/faxian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fra_ll_index_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_65PX"
+            android:layout_marginTop="@dimen/DIMEN_47PX" >
+
+            <ImageView
+                android:id="@+id/fra_iv_index_map"
+                android:layout_width="@dimen/DIMEN_44PX"
+                android:layout_height="@dimen/DIMEN_44PX"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ditu"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/fra_iv_index_maps"
+                android:layout_width="@dimen/DIMEN_44PX"
+                android:layout_height="@dimen/DIMEN_44PX"
+                android:layout_alignLeft="@+id/fra_iv_index_map"
+                android:layout_alignTop="@+id/fra_iv_index_map"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/liebiao" />
+
+            <TextView
+                android:id="@+id/fra_tv_index_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fra_iv_index_map"
+                android:text="列表"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

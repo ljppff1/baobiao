@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.jfeinstein.jazzyviewpager.JazzyViewPager
+        android:id="@+id/download_jazzyvp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/color_e7" />
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <RadioGroup
+            android:id="@+id/rg_toptablehost"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_centerInParent="true"
+            android:baselineAligned="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                  android:id="@+id/rl_gchat"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                     android:id="@+id/rb_gchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_home_btn"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                   android:id="@+id/rl_discuss"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rb_discuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_friends_btn"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_discusss"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                      android:id="@+id/rb_discusss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_message_btn"
+                    android:button="@null" />
+            </RelativeLayout>
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>

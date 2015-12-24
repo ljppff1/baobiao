@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_indents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX" >
+
+            <TextView
+                android:id="@+id/item_tv_task_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="订单 12312"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_tv_task_order_ids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="全部 "
+                android:textColor="@color/hong"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+
+        <TextView
+            android:id="@+id/item_tv_task_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务类型 : 旅游陪同(需要二个三级特卫)"
+            android:textColor="@color/aq"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_tv_task_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务时长 : 7个月"
+            android:textColor="@color/aq"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_15PX" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/qi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="起"
+                    android:textColor="@color/color_a"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_tv_task_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015年2月1日 13.00"
+                android:textColor="@color/aq"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_marginLeft="@dimen/DIMEN_16PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dian3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_15PX" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/zhi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="止"
+                    android:textColor="@color/color_a"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_tv_task_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015年9月1日 13.00"
+                android:textColor="@color/aq"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_tv_task_renshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务保镖:"
+            android:textColor="@color/aq"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="订单金额 : "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_tv_task_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="￥1280.00"
+                android:textColor="@color/hong"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/eb" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/DIMEN_20PX"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX"
+        android:paddingTop="@dimen/DIMEN_20PX" >
+
+        <RelativeLayout
+            android:id="@+id/item_rl_task_click"
+            android:layout_width="@dimen/DIMEN_180PX"
+            android:layout_height="@dimen/DIMEN_68PX"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/fra_task"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/item_indent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/DIMEN_20PX"
+                android:text="付款"
+                android:textColor="@color/color_a"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_rl_task_clicks"
+            android:layout_width="@dimen/DIMEN_180PX"
+            android:layout_height="@dimen/DIMEN_68PX"
+            android:layout_marginRight="@dimen/DIMEN_55PX"
+            android:layout_toLeftOf="@+id/item_rl_task_click"
+            android:background="@drawable/item_indents" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/DIMEN_20PX"
+                android:text="取消订单"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_20PX"
+        android:background="@color/ef" />
+
+</LinearLayout>

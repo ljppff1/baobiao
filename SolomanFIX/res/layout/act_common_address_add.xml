@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/indexs22" >
+
+        <ImageView
+            android:id="@+id/fra_iv_viewss"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_35PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fanhui3" />
+
+        <TextView
+            android:id="@+id/fra_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地址"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fra_tv_addresss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_35PX"
+            android:gravity="center_vertical"
+            android:text="新增"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_30PX"
+        android:paddingRight="@dimen/DIMEN_30PX" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_120PX"
+                android:text="姓名"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/act_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:singleLine="true"
+                android:textColor="@color/h99"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_120PX"
+                android:text="性别"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_toptablehost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/DIMEN_16PX"
+                    android:text="男"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_gchat"
+                    android:layout_width="@dimen/DIMEN_55PX"
+                    android:layout_height="@dimen/DIMEN_55PX"
+                    android:background="@drawable/act_common"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/DIMEN_16PX"
+                    android:text="女"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_discuss"
+                    android:layout_width="@dimen/DIMEN_55PX"
+                    android:layout_height="@dimen/DIMEN_55PX"
+                    android:background="@drawable/act_common"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_120PX"
+                android:text="电话"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/act_tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入电话号码"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="@color/h99"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:id="@+id/act_ll_city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省份"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_marginBottom="@dimen/DIMEN_10PX"
+                android:layout_marginRight="@dimen/DIMEN_90PX"
+                android:src="@drawable/san3" />
+
+            <TextView
+                android:id="@+id/act_tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请选择省份"
+                android:textColor="@color/h99"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_120PX"
+                android:text="地址"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/act_tv_info_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入详细地址"
+                android:singleLine="true"
+                android:textColor="@color/h99"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/DIMEN_120PX"
+                android:text="默认服务地址"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_toptablehosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/DIMEN_16PX"
+                    android:text="是"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_s"
+                    android:layout_width="@dimen/DIMEN_55PX"
+                    android:layout_height="@dimen/DIMEN_55PX"
+                    android:background="@drawable/act_common"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/DIMEN_16PX"
+                    android:text="否"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_f"
+                    android:layout_width="@dimen/DIMEN_55PX"
+                    android:layout_height="@dimen/DIMEN_55PX"
+                    android:background="@drawable/act_common"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@color/cc" />
+    </LinearLayout>
+
+</LinearLayout>

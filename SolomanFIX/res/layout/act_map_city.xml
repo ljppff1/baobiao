@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/indexs22" >
+
+        <ImageView
+            android:id="@+id/fra_iv_viewss"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_35PX"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fanhui3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/DIMEN_10PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:layout_marginTop="@dimen/DIMEN_10PX"
+            android:layout_toRightOf="@+id/fra_iv_viewss"
+            android:background="@drawable/act_map_city" >
+
+            <AutoCompleteTextView
+                android:id="@+id/keyWord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5.0dip"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:dropDownVerticalOffset="1.0dip"
+                android:hint="请输入关键字"
+                android:imeOptions="actionDone"
+                android:inputType="text|textAutoComplete"
+                android:maxLength="20"
+                android:paddingRight="37.0dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_600PX" />
+
+    <com.soloman.org.cn.view.XListView
+        android:id="@+id/act_lv_common_address_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00cccccc"
+        android:dividerHeight="0px"
+        android:listSelector="#00000000" />
+
+</LinearLayout>

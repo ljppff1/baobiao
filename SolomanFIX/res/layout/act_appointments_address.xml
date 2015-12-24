@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_rl_common_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <ImageView
+            android:id="@+id/act_tv_common_address_return"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_34PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/web_view" />
+
+        <TextView
+            android:id="@+id/act_tv_common_address_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="地址"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/act_tv_common_address_phone"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_phone" >
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:text="提示:目前仅支持北京市服务"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_15PX"
+        android:layout_marginRight="@dimen/DIMEN_8PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/act_rl_z"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/DIMEN_180PX"
+            android:layout_weight="4"
+            android:background="@drawable/act_appointments_address"
+            android:paddingBottom="@dimen/DIMEN_15PX"
+            android:paddingLeft="@dimen/DIMEN_15PX"
+            android:paddingRight="@dimen/DIMEN_15PX"
+            android:paddingTop="@dimen/DIMEN_15PX" >
+
+            <RelativeLayout
+                android:id="@+id/item_rl_common_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:id="@+id/item_iv_common_address"
+                    android:layout_width="@dimen/DIMEN_40PX"
+                    android:layout_height="@dimen/DIMEN_40PX"
+                    android:layout_marginLeft="@dimen/DIMEN_5PX"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/icon_dizhi" />
+
+                <TextView
+                    android:id="@+id/item_tv_common_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_iv_common_address"
+                    android:layout_marginTop="@dimen/DIMEN_25PX"
+                    android:text="北京"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/act_iv_appintments_address"
+                android:layout_width="@dimen/DIMEN_50PX"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/item_tv_common_address_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_15PX"
+                android:layout_toLeftOf="@+id/act_iv_appintments_address"
+                android:layout_toRightOf="@+id/item_rl_common_address"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请输入地址"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="match_parent"
+            android:background="@color/color_e7" />
+
+        <RelativeLayout
+            android:id="@+id/act_rl_"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/DIMEN_180PX"
+            android:layout_toLeftOf="@+id/act_rl_z"
+            android:layout_weight="1"
+            android:background="@drawable/act_appointments_addresss"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:id="@+id/item_tv_common_address_delete"
+                android:layout_width="@dimen/DIMEN_46PX"
+                android:layout_height="@dimen/DIMEN_46PX"
+                android:adjustViewBounds="true"
+                android:src="@drawable/address1" />
+
+            <TextView
+                android:id="@+id/act_tv_appoinitments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tv_common_address_delete"
+                android:text="常用"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act_tv_appoinitments"
+                android:text="地址"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/act_lv_appintments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/act_rl_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_marginTop="@dimen/DIMEN_150PX"
+        android:background="@drawable/item_present_indent_click"
+        android:paddingBottom="@dimen/DIMEN_15PX"
+        android:paddingTop="@dimen/DIMEN_15PX" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:textColor="@color/color_a"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

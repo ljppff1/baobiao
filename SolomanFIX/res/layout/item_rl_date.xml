@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:background="@color/color_e7" >
+
+        <TextView
+            android:id="@+id/item_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_tv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_tv_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cc"
+        android:gravity="center_horizontal" >
+
+        <NumberPicker
+            android:id="@+id/np_date"
+            android:layout_width="@dimen/DIMEN_240PX"
+            android:layout_height="wrap_content" />
+
+
+        <NumberPicker
+            android:id="@+id/np_hour"
+            android:layout_width="@dimen/DIMEN_100PX"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@+id/np_date"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/np_hour"
+            android:text=":"
+            android:textSize="20.0sp"
+            android:visibility="gone" />
+
+        <NumberPicker
+            android:id="@+id/np_minute"
+            android:layout_width="@dimen/DIMEN_100PX"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvss"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

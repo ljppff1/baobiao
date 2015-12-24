@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fra_indexs_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/indexs22" >
+
+        <ImageView
+            android:id="@+id/fra_iv_viewss"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_35PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/chouti" />
+
+        <TextView
+            android:id="@+id/fra_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="已接任务"
+            android:textColor="@color/color_a"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fra_tv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:text="账户"
+            android:textColor="@color/ff"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_90PX"
+        android:background="@color/color_a"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/fra_rl_task_s"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/fra_tv_task_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="未完成"
+                android:textColor="@color/hong"
+                android:textSize="18sp" >
+            </TextView>
+
+            <View
+                android:id="@+id/fra_v_task_s"
+                android:layout_width="@dimen/DIMEN_182PX"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/hong" >
+            </View>
+
+            <TextView
+                android:id="@+id/fra_tv_task_sz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="未完成"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fra_rl_task_ss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/fra_tv_task_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已完成"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </TextView>
+
+            <View
+                android:id="@+id/fra_v_task_ss"
+                android:layout_width="@dimen/DIMEN_182PX"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/hong"
+                android:visibility="gone" >
+            </View>
+
+            <TextView
+                android:id="@+id/fra_tv_task_ssz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已完成"
+                android:textColor="@color/hong"
+                android:visibility="gone"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e7" />
+
+    <com.jfeinstein.jazzyviewpager.JazzyViewPager
+        android:id="@+id/download_jazzyvp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_e7" />
+
+</LinearLayout>

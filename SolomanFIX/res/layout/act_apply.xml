@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_a"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_rl_common_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_96PX"
+        android:background="@color/color_a" >
+
+        <ImageView
+            android:id="@+id/act_tv_common_address_return"
+            android:layout_width="@dimen/DIMEN_45PX"
+            android:layout_height="@dimen/DIMEN_45PX"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_34PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/web_view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="加入保镖"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_vw"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/color_e7" />
+
+    <ImageView
+        android:id="@+id/act_tv_common_address_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/jiaru" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/name20" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click1"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="姓名"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/phonejia" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click2"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="电话"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/city20" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click3"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="城市"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/address20" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click4"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="地址"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/huohuo" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click5"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="开户银行"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/huohuo1" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click6"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="支行名称"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/apply"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/DIMEN_40PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:src="@drawable/huohuo2" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/login_click7"
+            android:layout_width="@dimen/DIMEN_30PX"
+            android:layout_height="@dimen/DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:adjustViewBounds="true"
+            android:src="@drawable/delete_gray"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_44PX"
+            android:layout_toLeftOf="@+id/login_click7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:hint="银行账户"
+            android:paddingRight="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/item_present_indent_tv_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_38PX"
+        android:background="@drawable/item_present_indent_click"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:paddingTop="@dimen/DIMEN_12PX"
+        android:text="提交"
+        android:textColor="@color/color_a"
+        android:textSize="14sp" />
+
+</LinearLayout>
